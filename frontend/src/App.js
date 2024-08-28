@@ -1,7 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+//TODO:browser playable import
+import adapter from 'webrtc-adapter';
+import io from 'socket.io-client';
+
+import { useState } from 'react';
 
 function App() {
+  useState(()=>{
+    //run on load...
+    io.connect('https://localhost:9000',{
+      rejectUnauthorized: false //ONLY OK FOR LOCAL
+    })
+    //try GUM
+    const stream = navigator.mediaDevices.getUserMedia({
+      video: true,
+      audio: true
+    })
+
+
+  },[])
   return (
     <div className="App">
       <header className="App-header">

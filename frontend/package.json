@@ -12,7 +12,8 @@
     "react-scripts": "5.0.1",
     "socket.io": "^4.7.5",
     "socket.io-client": "^4.7.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webrtc-adapter": "^9.0.1"
   },
   "scripts": {
     "start": "set HTTPS=true&&set SSL_CRT_FILE=./certs/cert.crt&&set SSL_KEY_FILE=./certs/cert.key&&react-scripts start",
